@@ -5,13 +5,45 @@
     gap: 10px;
     justify-content: space-around;
     padding: 15px 0px 15px 0px;
-    max-width: 95vw;
+    width: 100%;
+    max-width: 70vw;
 }
 .productContainer {
     border-radius: 0% !important;
 }
 .productImage {
     border-radius: 0% !important;
+    position: relative;
+}
+.productFeatureContainer {
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+}
+.productFeature {
+    font-size: 0.7rem !important;
+    margin: 0 !important;
+}
+.productButtonContainer {
+    position: absolute;
+    margin-top: 315px;
+    margin-left: 10px;
+}
+.productButton {
+    border-radius: 0% !important;
+    background-color: black !important;
+    font-size: 0.8rem !important;
+    border: none !important;
 }
 .productCardBody {
     display: flex;
@@ -20,7 +52,11 @@
 }
 .productCardPrice {
     margin: 0 !important;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 .productCardText {
+    font-size: 0.9rem;
+    margin: 0 !important;
     padding-left: 10px;
 }

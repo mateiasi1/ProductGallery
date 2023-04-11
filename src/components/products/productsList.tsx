@@ -41,11 +41,13 @@ const ProductsList = () => {
                         src={product.imageURL}
                         alt="Card image cap"
                     />
-                    <div>
-                        {" "}
-                        <a href="#" className="btn btn-primary">
+                    <div className="productFeatureContainer">
+                        <p className="productFeature">{product.feature}</p>
+                    </div>
+                    <div className="productButtonContainer">
+                        <p className="btn btn-primary productButton">
                             {product.name} &gt;
-                        </a>
+                        </p>
                     </div>
                     <div className="card-body productCardBody">
                         <h5 className="card-title productCardPrice">
