@@ -11,7 +11,16 @@ const Layout = ({ children }: Props) => {
     return (
         <>
             <Header />
-            <div style={{ minHeight: "100vh" }}>{children}</div>
+            <div
+                style={{
+                    minHeight: "100vh",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                }}
+            >
+                {children}
+            </div>
             <Footer />
         </>
     );

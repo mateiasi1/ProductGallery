@@ -2,6 +2,7 @@
 
 .logoSize {
     width: 50%;
+    cursor: pointer;
     @include md {
         width: 15%;
     }

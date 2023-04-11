@@ -1,9 +1,10 @@
 import React from "react";
+import "./productsListStyles.scss";
 
 const Products = [
     {
         feature: "KAMPAGNE",
-        imageURL: "",
+        imageURL: "/images/bathroom.png",
         sellPrice: "36.495",
         price: "21.595",
         coinSymbol: "DKK",
@@ -12,7 +13,7 @@ const Products = [
 
     {
         feature: "DEMO PRIS",
-        imageURL: "",
+        imageURL: "/images/livingroom.png",
         sellPrice: "36.495",
         price: "41.995",
         coinSymbol: "DKK",
@@ -20,7 +21,7 @@ const Products = [
     },
     {
         feature: "NYHED",
-        imageURL: "",
+        imageURL: "/images/kitchen.png",
         sellPrice: "116.495",
         price: "121.795",
         coinSymbol: "DKK",
@@ -29,22 +30,34 @@ const Products = [
 ];
 const ProductsList = () => {
     return (
-        <>
+        <div className="productsContainer">
             {Products.map((product) => (
-                <div className="container">
-                    <div className="row">
-                        <div
-                            className="col"
-                            style={{ color: "#000", zIndex: 1 }}
-                        >
-                            {product.name}
-                        </div>
-                        <div className="col">{product.price}</div>
-                        <div className="col">{product.sellPrice}</div>
+                <div
+                    className="card productContainer"
+                    style={{ width: "18rem" }}
+                >
+                    <img
+                        className="card-img-top productImage"
+                        src={product.imageURL}
+                        alt="Card image cap"
+                    />
+                    <div>
+                        {" "}
+                        <a href="#" className="btn btn-primary">
+                            {product.name} &gt;
+                        </a>
+                    </div>
+                    <div className="card-body productCardBody">
+                        <h5 className="card-title productCardPrice">
+                            {product.price + product.coinSymbol}
+                        </h5>
+                        <p className="card-text productCardText">
+                            <s>{product.sellPrice + product.coinSymbol}</s>
+                        </p>
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     );
 };
 

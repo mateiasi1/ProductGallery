@@ -1,0 +1,26 @@
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 15px 0px 15px 0px;
+    max-width: 95vw;
+}
+.productContainer {
+    border-radius: 0% !important;
+}
+.productImage {
+    border-radius: 0% !important;
+}
+.productCardBody {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.productCardPrice {
+    margin: 0 !important;
+}
+.productCardText {
+    padding-left: 10px;
+}
