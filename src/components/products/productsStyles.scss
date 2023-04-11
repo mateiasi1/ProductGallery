@@ -1,4 +1,30 @@
+@import "../../styles/mixins";
 .bgProductImageContainer {
     position: relative;
     width: 100%;
+}
+.buttonStyleProducts {
+    padding: 2% 12% 2% 12% !important;
+    border-radius: 4px !important;
+    color: white;
+    @include md {
+    }
+}
+.buttonDetailsProducts {
+    background-color: black;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.aboutUsButtonProducts {
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    background: black;
+    border: 1px solid black;
+    color: black;
+    @include md {
+        background: transparent;
+        border: 1px solid black;
+    }
 }

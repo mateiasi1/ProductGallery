@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import ProductsList from "./productsList";
 import "./productsStyles.scss";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const Products = () => {
     const images = [
@@ -9,6 +10,7 @@ const Products = () => {
         "/images/productsPageBackground.png",
         "/images/productsPageBackground.png",
     ];
+    const { themeValue } = useContext(ThemeContext);
     return (
         <>
             <div className="bgProductImageContainer">
@@ -59,13 +61,33 @@ const Products = () => {
                         </button>
                     </div>
                     <div className="textAndButton">
-                        <img src={"/images/detaljer.png"} alt="logo" />
+                        <p
+                            style={{
+                                fontSize: "1.5rem",
+                                color: "black",
+                                margin: 0,
+                                marginLeft: "4px",
+                            }}
+                        >
+                            KIG FORBI OG LAD DIG
+                        </p>
+                        <p
+                            style={{
+                                fontSize: "4.2rem",
+                                fontWeight: "bold",
+                                color: "black",
+                                marginTop: "-25px",
+                                marginLeft: 0,
+                            }}
+                        >
+                            INSPIRERE...
+                        </p>
                         <div className="buttonsContainer">
-                            <button className="buttonDetails buttonStyle">
-                                SE CASES
+                            <button className="buttonDetailsProducts buttonStyleProducts">
+                                HER BOR VI
                             </button>
-                            <button className="buttonStyle aboutUsButton">
-                                OM OS
+                            <button className="buttonStyleProducts aboutUsButtonProducts">
+                                HER BOR VI
                             </button>
                         </div>
                     </div>

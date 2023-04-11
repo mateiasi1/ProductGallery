@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./homeStyles.scss";
+import { ThemeContext } from "../../contexts/ThemeContext";
 const Home = () => {
     const images = [
         "/images/homeBackground.png",
         "/images/homeBackground.png",
         "/images/homeBackground.png",
     ];
+
     return (
         <div className="bgImageContainer">
             <div style={{ position: "relative" }}>
