@@ -2,7 +2,7 @@ import React, { FC, useContext } from "react";
 import { FontAwesomeIcon, Props } from "@fortawesome/react-fontawesome";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import "./contactAndSocialStyles.scss";
-import ContactPhone from "../../shared/contactPhone/contactPhone.tsx";
+import ContactPhone from "../../shared/contactPhone/contactPhone";
 
 const ContactAndSocial = () => {
     return (

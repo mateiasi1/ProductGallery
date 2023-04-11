@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import DropDownMenu from "./dropdown/dropdownMenu.tsx";
-import Logo from "./logo/logo.tsx";
+import DropDownMenu from "./dropdown/dropdownMenu";
+import Logo from "./logo/logo";
 import "./index.scss";
-import ContactAndSocial from "./contactAndSocial/contactAndSocial.tsx";
+import ContactAndSocial from "./contactAndSocial/contactAndSocial";
 
 const Header = () => {
     return (

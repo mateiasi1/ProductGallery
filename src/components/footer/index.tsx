@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./indexStyle.scss";
-import ContactPhone from "../shared/contactPhone/contactPhone.tsx";
+import ContactPhone from "../shared/contactPhone/contactPhone";
 
 const Footer = () => {
     return (

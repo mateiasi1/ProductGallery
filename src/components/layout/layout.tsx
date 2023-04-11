@@ -1,12 +1,13 @@
-import React, { FC } from "react";
-import Header from "../header/index.tsx";
-import Footer from "../footer/index.tsx";
+import React, { FC, ReactNode } from "react";
+import Header from "../header/index";
+import Footer from "../footer/index";
 
-type Props = {
-    headerBlack?: boolean;
-    children: any;
-};
-const Layout: FC<Props> = ({ children, headerBlack }) => {
+interface Props {
+    children?: ReactNode;
+    // any props that come into the component
+}
+
+const Layout = ({ children }: Props) => {
     return (
         <>
             <Header />

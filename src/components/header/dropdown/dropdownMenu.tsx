@@ -3,8 +3,11 @@ import "./dropdownStyles.scss";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const DropDownMenu = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="dropdown">
             <button
@@ -18,9 +21,12 @@ const DropDownMenu = () => {
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
-                    <a className="dropdown-item" href="#">
+                    <button
+                        className="dropdown-item"
+                        onClick={() => navigate("/products")}
+                    >
                         Product Gallery
-                    </a>
+                    </button>
                 </li>
             </ul>
         </div>

@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ProductsPage from "./pages/products.tsx";
-import HomePage from "./pages/index.tsx";
-import Layout from "./components/layout/layout.tsx";
-export default function App() {
+import "./App.scss";
+import Layout from "./components/layout/layout";
+import ProductsPage from "./pages/productsPage";
+import HomePage from "./pages";
+
+function App() {
     return (
         <Router>
             <Layout>
@@ -16,6 +18,4 @@ export default function App() {
     );
 }
 
-function Users() {
-    return <h2>Users</h2>;
-}
+export default App;

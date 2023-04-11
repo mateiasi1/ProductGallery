@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/products/index.tsx";
+import Products from "../components/products/products";
 const ProductsPage = () => {
     return <Products />;
 };
