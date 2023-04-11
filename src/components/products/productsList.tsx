@@ -86,6 +86,38 @@ const ProductsList = () => {
 
     return (
         <div className="productPageContainer">
+            <div className="productPageText">
+                <p style={{ paddingTop: "50px", margin: 0 }}>
+                    KOM NED I BUTIKKEN OG SE VORES
+                </p>
+                <p
+                    style={{
+                        fontSize: "2.3rem",
+                        fontWeight: "bold",
+                        margin: 0,
+                    }}
+                >
+                    DEMOVARER TIL EN FORNUFTIG PRIS
+                </p>
+                <hr
+                    style={{
+                        borderWidth: 3,
+                        width: "100px",
+                        color: "#000",
+                        opacity: 1,
+                    }}
+                />
+                <p
+                    style={{
+                        maxWidth: "650px",
+                        textAlign: "center",
+                    }}
+                >
+                    Vi bruger aktivt vores showroom til kundearrangementer,
+                    kokkeskole og lign., derfor rummer vores udstilling
+                    gennemtænkte detalijer, til, praktisk gavn i hverdagen.
+                </p>
+            </div>
             <div className="productsContainer">
                 {Products.slice(0, next).map((product) => (
                     <div
