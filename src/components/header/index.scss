@@ -1,0 +1,34 @@
+@import "../../styles/mixins";
+.root {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+}
+.dropdownAndLogoContianer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.contactAndSocialContainer {
+    width: 100%;
+}
+.header {
+    background: transparent;
+    position: absolute !important;
+    z-index: 1;
+    width: 100%;
+}
+.navbar-transparent {
+    background-color: transparent !important;
+}
+
+.navbar-transparent .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-transparent .navbar-brand {
+    color: #fff !important;
+}

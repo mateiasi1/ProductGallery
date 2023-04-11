@@ -1,0 +1,25 @@
+.contentBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.contactBox {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.envelope {
+    color: white;
+    margin-right: 10px;
+}
+.copyrightColor {
+    color: #fff;
+    margin: 0px;
+    font-size: small;
+}

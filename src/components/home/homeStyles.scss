@@ -1,0 +1,57 @@
+@import "../../styles/mixins";
+.bgImageContainer {
+    position: relative;
+    width: 100%;
+}
+.image {
+    position: absolute;
+    width: 100%;
+}
+.textAndButton {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25vw;
+    height: 25vh;
+    top: 35vh;
+    left: 20%;
+}
+.buttonStyle {
+    padding: 2% 12% 2% 12% !important;
+    border-radius: 4px !important;
+    color: white;
+    @include md {
+    }
+}
+.buttonDetails {
+    background-color: black;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    @include md {
+        flex-direction: row;
+    }
+}
+.aboutUsButton {
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    background: black;
+    border: 1px solid black;
+    @include md {
+        background: transparent;
+        border: 1px solid white;
+    }
+}
+
+.carouselButtons {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
