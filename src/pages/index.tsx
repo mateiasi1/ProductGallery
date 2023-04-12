@@ -4,7 +4,7 @@ import { ThemeContext } from "../contexts/ThemeContext";
 
 const HomePage = () => {
     const { themeValue, setThemeValue } = useContext(ThemeContext);
-    debugger;
+
     if (themeValue === false) {
         setThemeValue(true);
     }

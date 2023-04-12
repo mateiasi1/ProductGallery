@@ -1,17 +1,27 @@
-import React, { FC, useContext } from "react";
-import { FontAwesomeIcon, Props } from "@fortawesome/react-fontawesome";
-import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
-import "./contactAndSocialStyles.scss";
+import { useContext } from "react";
+import { ThemeContext } from "../../../contexts/ThemeContext";
 import ContactPhone from "../../shared/contactPhone/contactPhone";
+import SocialIcons from "../../shared/contactPhone/socialIcons";
+import "./contactAndSocialStyles.scss";
 
 const ContactAndSocial = () => {
+    const { themeValue } = useContext(ThemeContext);
     return (
         <div className="rootContact">
-            <div className="vr" style={{ color: "#fff" }}></div>
-            <div className="phoneContainer">
+            <div
+                className="vr"
+                style={{ color: themeValue ? "#fff" : "#000" }}
+            ></div>
+            <div className="contactContainer">
                 <ContactPhone />
             </div>
-            <div className="vr" style={{ color: "#fff" }}></div>
+            <div
+                className="vr"
+                style={{ color: themeValue ? "#fff" : "#000" }}
+            ></div>
+            <div className="contactContainer">
+                <SocialIcons />
+            </div>
         </div>
     );
 };
