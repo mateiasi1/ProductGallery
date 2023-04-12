@@ -2,6 +2,10 @@
 .bgProductImageContainer {
     position: relative;
     width: 100%;
+    display: none;
+    @include md {
+        display: flex;
+    }
 }
 .buttonStyleProducts {
     padding: 2% 12% 2% 12% !important;
@@ -27,4 +31,20 @@
         background: transparent;
         border: 1px solid black;
     }
+}
+.carouselBold {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-top: -25px;
+    margin-left: 0;
+    @include md {
+        font-size: 4.2rem;
+    }
+}
+.caruselThin {
+    font-size: 1.5rem;
+    color: black;
+    margin: 0;
+    margin-left: 4px;
 }

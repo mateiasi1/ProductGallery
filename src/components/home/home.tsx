@@ -3,9 +3,9 @@ import "./homeStyles.scss";
 import { ThemeContext } from "../../contexts/ThemeContext";
 const Home = () => {
     const images = [
-        "/images/homeBackground.png",
-        "/images/homeBackground.png",
-        "/images/homeBackground.png",
+        { id: 1, url: "/images/homeBackground.png" },
+        { id: 2, url: "/images/homeBackground.png" },
+        { id: 3, url: "/images/homeBackground.png" },
     ];
 
     return (
@@ -19,11 +19,12 @@ const Home = () => {
                     <div className="carousel-inner">
                         {images.map((image) => (
                             <div
+                                key={image.id}
                                 className="carousel-item active"
                                 data-bs-interval="10000"
                             >
                                 <img
-                                    src={image}
+                                    src={image.url}
                                     className="d-block w-100"
                                     alt="..."
                                 />
@@ -57,9 +58,10 @@ const Home = () => {
                     </button>
                 </div>
                 <div className="textAndButton">
-                    <img src={"/images/detaljer.png"} alt="logo" />
+                    <p className="caruselHOmeThin">GENNEMTÆNKTE</p>
+                    <p className="carouselHomeBold">DETALJER</p>
                     <div className="buttonsContainer">
-                        <button className="buttonDetails buttonStyle">
+                        <button className="buttonDetailsProducts buttonStyleProducts">
                             SE CASES
                         </button>
                         <button className="buttonStyle aboutUsButton">

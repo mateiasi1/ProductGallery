@@ -1,8 +1,12 @@
-import React from "react";
+import {
+    faPhoneVolume,
+    faEnvelope,
+    faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import "./indexStyle.scss";
 import ContactPhone from "../shared/contactPhone/contactPhone";
+import "./indexStyle.scss";
 
 const Footer = () => {
     return (
@@ -16,19 +20,8 @@ const Footer = () => {
                         style={{ height: "300px" }}
                     />
                     <div className="contactBox">
-                        <div
-                            style={{
-                                display: "flex",
-                                flexDirection: "column",
-                                width: "400px",
-                            }}
-                        >
-                            <div
-                                style={{
-                                    display: "flex",
-                                    flexDirection: "row",
-                                }}
-                            >
+                        <div className="contactRoot">
+                            <div className="footerContactInfoContainer">
                                 <p
                                     style={{
                                         padding: "0px 5px 0px 5px",
@@ -49,22 +42,32 @@ const Footer = () => {
                                         Info@vestjyskmarketing.dk
                                     </a>
                                 </p>
-                                <div
-                                    className="vr"
+                                <div className="vr footerHr"></div>
+                                <p
                                     style={{
-                                        color: "#fff",
-                                        margin: "0px 10px 0px 10px",
+                                        padding: "0px 10px 0px 10px",
+                                        margin: 0,
                                     }}
-                                ></div>
-                                <ContactPhone />
+                                >
+                                    <a
+                                        href="tel:97 32 01 08"
+                                        style={{
+                                            textDecoration: "none",
+                                            color: "#fff",
+                                        }}
+                                    >
+                                        <FontAwesomeIcon
+                                            icon={faPhoneVolume}
+                                            style={{
+                                                color: "#fff",
+                                                marginRight: "10px",
+                                            }}
+                                        />
+                                        97 32 01 08
+                                    </a>
+                                </p>
                             </div>
-                            <div
-                                style={{
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    padding: "10px 0px 10px 0px",
-                                }}
-                            >
+                            <div className="footerContactInfoContainer">
                                 <p
                                     style={{
                                         padding: "0px 5px 0px 5px",
@@ -86,13 +89,7 @@ const Footer = () => {
                                         Info@vestjyskmarketing.dk
                                     </a>
                                 </p>
-                                <div
-                                    className="vr"
-                                    style={{
-                                        color: "#fff",
-                                        margin: "0px 10px 0px 10px",
-                                    }}
-                                ></div>
+                                <div className="vr footerHr"></div>
                                 <p
                                     style={{
                                         padding: "0px 5px 0px 5px",
@@ -104,16 +101,7 @@ const Footer = () => {
                                 </p>
                             </div>
                         </div>
-                        <div
-                            style={{
-                                width: "400px",
-                                display: "flex",
-                                flexDirection: "column",
-                                alignContent: "center",
-                                justifyContent: "center",
-                                alignItems: "center",
-                            }}
-                        >
+                        <div className="footerLogoContainer">
                             <img
                                 src={"images/logoFooter.png"}
                                 className="d-block"
@@ -121,25 +109,11 @@ const Footer = () => {
                                 style={{ width: "200px" }}
                             />
                         </div>
-                        <div
-                            style={{
-                                width: "400px",
-                                display: "flex",
-                                flexDirection: "row",
-                                justifyContent: "flex-end",
-                                alignItems: "flex-end",
-                            }}
-                        >
+                        <div className="partnetsContainer">
                             <img
                                 src={"images/gaggenau-logo.png"}
-                                className="d-block"
+                                className="d-block partnersGaggenau"
                                 alt="..."
-                                style={{
-                                    width: "100px",
-                                    height: "30px",
-                                    margin: 0,
-                                    marginRight: "20px",
-                                }}
                             />
                             <img
                                 src={"images/Gazelle.png"}

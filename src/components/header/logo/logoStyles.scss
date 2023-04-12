@@ -1,8 +1,9 @@
 @import "../../../styles/mixins";
 
 .logoSize {
-    width: 50%;
+    width: 35%;
     cursor: pointer;
+
     @include md {
         width: 15%;
     }

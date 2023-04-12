@@ -9,17 +9,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    @include md {
+        padding-top: 0px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 .contactAndSocialContainer {
     width: 100%;
 }
 .header {
     background: transparent;
+
     position: absolute !important;
     z-index: 1;
     width: 100%;
+}
+.isHeaderBlack {
+    background: black !important;
+    padding-bottom: 10px;
+    @include md {
+        background: transparent !important;
+        padding-bottom: 0px;
+    }
 }
 .navbar-transparent {
     background-color: transparent !important;

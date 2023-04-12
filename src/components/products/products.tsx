@@ -6,9 +6,9 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 const Products = () => {
     const images = [
-        "/images/productsPageBackground.png",
-        "/images/productsPageBackground.png",
-        "/images/productsPageBackground.png",
+        { id: 1, url: "/images/productsPageBackground.png" },
+        { id: 2, url: "/images/productsPageBackground.png" },
+        { id: 3, url: "/images/productsPageBackground.png" },
     ];
     const { themeValue } = useContext(ThemeContext);
     return (
@@ -23,11 +23,12 @@ const Products = () => {
                         <div className="carousel-inner">
                             {images.map((image) => (
                                 <div
+                                    key={image.id}
                                     className="carousel-item active"
                                     data-bs-interval="10000"
                                 >
                                     <img
-                                        src={image}
+                                        src={image.url}
                                         className="d-block w-100"
                                         alt="..."
                                     />
@@ -61,27 +62,8 @@ const Products = () => {
                         </button>
                     </div>
                     <div className="textAndButton">
-                        <p
-                            style={{
-                                fontSize: "1.5rem",
-                                color: "black",
-                                margin: 0,
-                                marginLeft: "4px",
-                            }}
-                        >
-                            KIG FORBI OG LAD DIG
-                        </p>
-                        <p
-                            style={{
-                                fontSize: "4.2rem",
-                                fontWeight: "bold",
-                                color: "black",
-                                marginTop: "-25px",
-                                marginLeft: 0,
-                            }}
-                        >
-                            INSPIRERE...
-                        </p>
+                        <p className="caruselThin">KIG FORBI OG LAD DIG</p>
+                        <p className="carouselBold">INSPIRERE...</p>
                         <div className="buttonsContainer">
                             <button className="buttonDetailsProducts buttonStyleProducts">
                                 HER BOR VI
